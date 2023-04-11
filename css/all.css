@@ -1,0 +1,1577 @@
+/* SCSS Compiled */ /***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #000;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+/*
+@media (min-width: 1921px){}
+@media (width: 1920px){}
+@media (min-width: 1440px) and (max-width: 1919px) {}
+@media (min-width: 1360px) and (max-width: 1439px) {}
+@media (min-width: 1280px) and (max-width: 1359px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 375px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 374px) {}
+*/
+/*
+@media (max-width: 1919px) {}
+@media (max-width: 1439px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 767px) {}
+*/
+/* Brand Colors ------------------------------------------------*/
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 1074px;
+  margin: 0 auto;
+}
+
+header {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  height: 155px;
+}
+header .logo {
+  float: left;
+  margin: 0 57px 0 0;
+}
+header .logo a {
+  display: block;
+  overflow: hidden;
+  width: 246px;
+  height: 145px;
+}
+header .logo a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header .logo h1 {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+header nav {
+  float: left;
+  border-bottom: 0.5px solid #4B6049;
+  text-align: center;
+}
+header nav .links-header {
+  float: left;
+  margin: 56px 0 0 0;
+  text-align: center;
+}
+header nav .links-header li {
+  float: left;
+  margin: 0 25px 0 0;
+}
+header nav .links-header li a {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+}
+header nav .links-header li:first-child {
+  margin-left: 25px;
+}
+header .basket {
+  float: right;
+}
+header .basket ul {
+  float: right;
+  margin: 54px 0 0 0;
+}
+header .basket ul li {
+  float: left;
+  margin: 0 0 0 20px;
+}
+header .basket ul li a {
+  display: block;
+  overflow: hidden;
+}
+header .basket ul li a img {
+  display: block;
+  overflow: hidden;
+}
+header .basket ul li a:hover {
+  box-shadow: 0 5px 5px #4B6049;
+}
+
+.first-view {
+  position: relative;
+}
+.first-view .img-holder {
+  width: 1123px;
+  height: 803px;
+  float: right;
+  z-index: 2;
+}
+.first-view .img-holder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.first-view .info {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 75px 0 0 0;
+}
+.first-view .info h2 {
+  width: 600px;
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  color: #484847;
+}
+.first-view .info p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  margin-top: 92px;
+  width: 490px;
+}
+.first-view .info a {
+  display: block;
+  overflow: hidden;
+}
+.first-view .info a .button-catalogue {
+  position: relative;
+  text-align: center;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 26px;
+  width: 219px;
+  height: 59px;
+  background-color: #4B6049;
+  text-align: center;
+  line-height: 59px;
+  margin-top: 100px;
+}
+.first-view .info a .button-catalogue:hover {
+  background-color: #484847;
+}
+.first-view .info a .button-catalogue:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 219px;
+  height: 59px;
+  border: 1px solid #484847;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.novelties {
+  position: relative;
+}
+.novelties .img-holder-nov {
+  width: 100%;
+  height: 100vh;
+  float: right;
+  position: absolute;
+  z-index: 1;
+}
+.novelties .img-holder-nov img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.novelties .layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 1488px;
+  margin: 0 auto;
+}
+.novelties .layout .text-novelties {
+  z-index: 2;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.novelties .layout .text-novelties h3 {
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  color: #484847;
+  margin-top: 78px;
+}
+.novelties .layout .text-novelties p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  margin: 58px 0 0 207px;
+}
+
+.catalogue-articles {
+  display: flex;
+  justify-content: space-between;
+}
+.catalogue-articles a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.catalogue-articles a .button-catalogue {
+  position: relative;
+  text-align: center;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 26px;
+  width: 219px;
+  height: 59px;
+  background-color: #4B6049;
+  text-align: center;
+  line-height: 59px;
+  margin-top: 8px;
+}
+.catalogue-articles a .button-catalogue:hover {
+  background-color: #484847;
+}
+.catalogue-articles a .button-catalogue:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 219px;
+  height: 59px;
+  border: 1px solid #484847;
+  box-sizing: border-box;
+  z-index: -1;
+}
+.catalogue-articles ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 1375px;
+}
+.catalogue-articles ul li {
+  width: 522px;
+  height: 347px;
+  margin: 0 0 123px 0;
+}
+.catalogue-articles ul li h4 {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.catalogue-articles ul li p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  margin-bottom: 12px;
+}
+.catalogue-articles ul li .button-details {
+  display: block;
+}
+.catalogue-articles ul li .button-details a {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 50px;
+}
+.catalogue-articles ul li .button-details a p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  border: 1.5px solid #484847;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.catalogue-articles ul li .button-details a img {
+  position: absolute;
+  width: 71px;
+  height: 12px;
+  top: 50%;
+  right: -35px;
+  margin: -6px;
+}
+.catalogue-articles .button-more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 100px 0 115px 0;
+}
+.catalogue-articles .button-more a {
+  display: inline-block;
+}
+.catalogue-articles .button-more a p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  border: 1.5px solid #484847;
+  width: 200px;
+  line-height: 50px;
+}
+footer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+footer .socials {
+  float: right;
+  height: 58px;
+}
+footer .socials .icon-socils {
+  float: right;
+  margin: 0 0 8px 0;
+}
+footer .socials .icon-socils li {
+  float: left;
+  margin: 0 0 0 15px;
+}
+footer .socials .icon-socils li a {
+  float: right;
+  border: 1px solid #4B6049;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+footer .socials .icon-socils li a img {
+  vertical-align: middle;
+  margin: 0 auto;
+}
+footer .socials .icon-socils li a:hover {
+  box-shadow: 0 5px 5px #4B6049;
+}
+footer .footermenu {
+  float: left;
+  height: 192px;
+  background-color: #4B6049;
+}
+footer .footermenu .logodown {
+  float: left;
+  margin: 29px 57px 0 0;
+}
+footer .footermenu .logodown a {
+  display: block;
+  overflow: hidden;
+  width: 246px;
+  height: 144px;
+}
+footer .footermenu .logodown a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+footer .footermenu .navigation .links-footer {
+  float: left;
+  margin-top: 38px;
+}
+footer .footermenu .navigation .links-footer li {
+  margin-bottom: 3px;
+}
+footer .footermenu .navigation .links-footer li a {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+}
+footer .footermenu .working-mode {
+  float: left;
+  margin: 38px 0 0 39px;
+}
+footer .footermenu .working-mode p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+}
+footer .footermenu .contacts-pay {
+  float: left;
+  margin: 38px 0 0 53px;
+}
+footer .footermenu .contacts-pay .contacts li a {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+}
+footer .footermenu .contacts-pay .contacts li:first-child {
+  margin-bottom: 3px;
+}
+footer .footermenu .pay {
+  float: right;
+  margin-top: 14px;
+}
+footer .footermenu .pay li {
+  float: left;
+  margin: 0 0 0 25px;
+}
+footer .footermenu .pay li a {
+  display: block;
+  overflow: hidden;
+}
+footer .footermenu .pay li a img {
+  display: block;
+  overflow: hidden;
+}
+
+.main-catalogue {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside {
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 226px;
+  margin-top: 114px;
+}
+.main-catalogue aside .product-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .product-group .type-product {
+  margin-bottom: 17px;
+}
+.main-catalogue aside .product-group .type-product span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .product-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .product-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .age-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .age-group .age {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.main-catalogue aside .age-group .age span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .age-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .age-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .purpose-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .purpose-group .purpose {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.main-catalogue aside .purpose-group .purpose span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .purpose-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .purpose-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .time-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .time-group .time {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.main-catalogue aside .time-group .time span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .time-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .time-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .protection-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .protection-group .protection {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.main-catalogue aside .protection-group .protection span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .protection-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .protection-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .skinType-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .skinType-group .skinType {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.main-catalogue aside .skinType-group .skinType span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+  cursor: pointer;
+}
+.main-catalogue aside .skinType-group .container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .skinType-group .container input {
+  left: 0;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 0;
+  bottom: 0;
+}
+.main-catalogue aside .price-group {
+  display: block;
+  position: relative;
+}
+.main-catalogue aside .price-group .price {
+  display: block;
+  position: relative;
+  margin-bottom: 7px;
+}
+.main-catalogue aside .price-group .price span {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+}
+.main-catalogue aside .price-group .input-price {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+}
+.main-catalogue aside .price-group .input-price .text {
+  width: 90px;
+  height: 45px;
+  border: 1px solid #484847;
+  padding-left: 5px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue aside .price-group .input-price ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  color: rgba(72, 72, 71, 0.5);
+}
+.main-catalogue aside .price-group .input-price p {
+  width: 15px;
+  height: 0px;
+  border: 1px solid #484847;
+  margin-top: 22px;
+}
+.main-catalogue .catalogue-products {
+  width: 840px;
+  margin-top: 67px;
+}
+.main-catalogue .catalogue-products .sorting {
+  float: left;
+  width: 115px;
+  height: 24px;
+  margin-bottom: 23px;
+}
+.main-catalogue .catalogue-products .sorting .button-sort {
+  float: left;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.main-catalogue .catalogue-products .sorting img {
+  float: left;
+  width: 11px;
+  height: 4px;
+  margin-top: 10px;
+}
+.main-catalogue .catalogue-products .list-products {
+  float: right;
+}
+.main-catalogue .catalogue-products .list-products ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.main-catalogue .catalogue-products .list-products ul li {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 260px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.main-catalogue .catalogue-products .list-products ul li .images-list {
+  overflow: hidden;
+  width: 234px;
+  height: 233px;
+}
+.main-catalogue .catalogue-products .list-products ul li .favorite {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 6px;
+  right: 15px;
+}
+.main-catalogue .catalogue-products .list-products ul li .favorite img {
+  display: block;
+  position: relative;
+}
+.main-catalogue .catalogue-products .list-products ul li .name-product {
+  text-align: left;
+  width: 234px;
+  height: 60px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+  margin-left: 12px;
+}
+.main-catalogue .catalogue-products .list-products ul li .price {
+  text-align: right;
+  margin-right: 14px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+.main-catalogue .catalogue-products .list-products ul li .button-det {
+  float: left;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #484847;
+  width: 82px;
+  height: 20px;
+  margin: 20px 0 0 12px;
+}
+.main-catalogue .catalogue-products .list-products ul li .button-basket {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFBF5;
+  width: 97px;
+  height: 25px;
+  background-color: #4B6049;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 16px;
+  margin: 16px 14px 0 0;
+  position: relative;
+}
+.main-catalogue .catalogue-products .list-products ul li .button-basket:hover {
+  background-color: #484847;
+}
+.main-catalogue .catalogue-products .list-products ul li .button-basket:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 97px;
+  height: 25px;
+  border: 1px solid #484847;
+  box-sizing: border-box;
+  z-index: -1;
+}
+.main-catalogue .catalogue-products .button-more {
+  display: block;
+  position: relative;
+  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.main-catalogue .catalogue-products .button-more a {
+  display: inline-block;
+  position: relative;
+}
+.main-catalogue .catalogue-products .button-more a p {
+  display: block;
+  position: relative;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  border: 1.5px solid #484847;
+  width: 200px;
+  line-height: 50px;
+}
+.viewed-products h3 {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  color: #484847;
+  margin: 95px 0 43px 0;
+}
+.viewed-products ul {
+  float: left;
+  margin-bottom: 87px;
+}
+.viewed-products ul li {
+  margin-right: 8px;
+  float: left;
+  width: 260px;
+  height: 400px;
+}
+.viewed-products ul li .name-product {
+  text-align: left;
+  width: 212px;
+  height: 60px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+  margin-left: 12px;
+}
+.viewed-products ul li .price {
+  text-align: right;
+  margin-right: 14px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+
+.persAreaContact {
+  display: flex;
+  justify-content: space-between;
+}
+.persAreaContact .layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 928px;
+  margin: 0 auto;
+}
+.persAreaContact .layout h2 {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  color: #484847;
+  text-align: center;
+  margin-top: 56px;
+  margin: 56px 0 22px 0;
+}
+.persAreaContact .layout .listPersArea {
+  display: flex;
+  justify-content: space-between;
+}
+.persAreaContact .layout .listPersArea li {
+  display: block;
+  overflow: hidden;
+}
+.persAreaContact .layout .listPersArea li a {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+}
+.persAreaContact .layout .listPersArea li:first-child {
+  border-bottom: 1px solid #484847;
+}
+.persAreaContact .layout .formContacts {
+  display: block;
+  overflow: hidden;
+}
+.persAreaContact .layout .formContacts .leftContacts {
+  float: left;
+  width: 368px;
+  margin-top: 28px;
+  display: block;
+  overflow: hidden;
+}
+.persAreaContact .layout .formContacts .leftContacts p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+.persAreaContact .layout .formContacts .leftContacts input {
+  width: 368px;
+  height: 50px;
+  border: 0.5px solid #484847;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+.persAreaContact .layout .formContacts .leftContacts ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+.persAreaContact .layout .formContacts .leftContacts .button-save {
+  text-align: center;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 26px;
+  width: 219px;
+  height: 59px;
+  background-color: #4B6049;
+  text-align: center;
+  line-height: 50px;
+  margin: 21px 0 10px 0;
+}
+.persAreaContact .layout .formContacts .leftContacts .button-save:hover {
+  background-color: #484847;
+}
+.persAreaContact .layout .formContacts .rightContacts {
+  float: right;
+  width: 368px;
+  margin-top: 28px;
+}
+.persAreaContact .layout .formContacts .rightContacts p {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+.persAreaContact .layout .formContacts .rightContacts input {
+  width: 368px;
+  height: 50px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  border: 0.5px solid #484847;
+  color: #484847;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+.persAreaContact .layout .formContacts .rightContacts ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #484847;
+}
+.persAreaContact .layout .button-exit {
+  display: block;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.persAreaContact .layout .button-exit a {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 50px;
+}
+.persAreaContact .layout .button-exit a .btnExit {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  border: 1.5px solid #484847;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.persAreaContact .layout .button-exit a img {
+  position: absolute;
+  width: 71px;
+  height: 12px;
+  top: 50%;
+  right: -35px;
+  margin: -6px;
+}
+
+.persAreaAddress {
+  display: flex;
+  justify-content: space-between;
+}
+.persAreaAddress .layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  width: 928px;
+  margin: 0 auto;
+}
+.persAreaAddress .layout h2 {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  color: #484847;
+  text-align: center;
+  margin-top: 56px;
+  margin: 56px 0 22px 0;
+}
+.persAreaAddress .layout .listPersAreaAddress {
+  display: flex;
+  justify-content: space-between;
+}
+.persAreaAddress .layout .listPersAreaAddress li {
+  display: block;
+  overflow: hidden;
+}
+.persAreaAddress .layout .listPersAreaAddress li a {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+}
+.persAreaAddress .layout .listPersAreaAddress li:nth-child(2) {
+  border-bottom: 1px solid #484847;
+}
+.persAreaAddress .layout .formAddress {
+  display: block;
+  overflow: hidden;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress {
+  width: 250px;
+  margin-top: 28px;
+  float: left;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne {
+  display: block;
+  overflow: hidden;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .note-conteinerOne {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .note-conteinerOne .userNumberOne {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #4B6049;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  color: #FFFFFF;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .AddressOneRight {
+  float: right;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .AddressOneRight .AddressOne {
+  display: block;
+  overflow: hidden;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .AddressOneRight .redactToolOne {
+  display: block;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .AddressOneRight .redactToolOne .redactOne {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 18px;
+  color: #484847;
+  text-decoration: underline;
+  margin-right: 8px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressOne .AddressOneRight .redactToolOne .deleteOne {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 18px;
+  line-height: 150%;
+  color: #484847;
+  text-decoration: underline;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo {
+  display: block;
+  overflow: hidden;
+  margin-top: 21px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .note-conteinerTwo {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .note-conteinerTwo .userNumberTwo {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #4B6049;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  color: #FFFFFF;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .AddressTwoRight {
+  float: right;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .AddressTwoRight .AddressTwo {
+  display: block;
+  overflow: hidden;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .AddressTwoRight .redactToolTwo {
+  display: block;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .AddressTwoRight .redactToolTwo .redactTwo {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 18px;
+  color: #484847;
+  text-decoration: underline;
+  margin-right: 8px;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .userAdressTwo .AddressTwoRight .redactToolTwo .deleteTwo {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 18px;
+  line-height: 150%;
+  color: #484847;
+  text-decoration: underline;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .button-save {
+  text-align: center;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFBF5;
+  font-size: 26px;
+  width: 219px;
+  height: 59px;
+  background-color: #4B6049;
+  text-align: center;
+  line-height: 50px;
+  margin: 63px 0 10px 0;
+  color: white;
+}
+.persAreaAddress .layout .formAddress .leftContactsAddress .button-save:hover {
+  background-color: #484847;
+}
+.persAreaAddress .layout .formAddress .rightAddress {
+  float: right;
+  width: 368px;
+  margin-top: 28px;
+}
+.persAreaAddress .layout .formAddress .rightAddress .addAddress {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #484847;
+  margin-bottom: 10px;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress1 {
+  display: block;
+  overflow: hidden;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress1 input {
+  width: 368px;
+  height: 50px;
+  border: 0.5px solid #484847;
+  color: #484847;
+  padding-left: 5px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #4B6049;
+  margin-bottom: 10px;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress1 ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #B3B3B2;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress2 {
+  display: flex;
+  justify-content: space-between;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress2 input {
+  width: 100px;
+  height: 50px;
+  border: 0.5px solid #484847;
+  color: #484847;
+  padding-left: 5px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #4B6049;
+  margin-bottom: 10px;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress2 ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #B3B3B2;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress3 {
+  display: block;
+  overflow: hidden;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress3 input {
+  width: 368px;
+  height: 50px;
+  border: 0.5px solid #484847;
+  color: #484847;
+  padding-left: 5px;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #4B6049;
+  margin-bottom: 10px;
+}
+.persAreaAddress .layout .formAddress .rightAddress .rightInputAddress3 ::placeholder {
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+  color: #B3B3B2;
+}
